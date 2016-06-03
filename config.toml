@@ -1,0 +1,7 @@
+baseurl = "http://www.cloud57.de/"
+languageCode = "de-de"
+title = "Cloud57"
+
+SectionPagesMenu = "hauptmenue"
+pluralizeListTitles = false
+
