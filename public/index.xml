@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud57</title>
+    <link>http://www.cloud57.de/</link>
+    <description>Recent content on Cloud57</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 01 Jun 2016 15:49:34 +0200</lastBuildDate>
+    <atom:link href="http://www.cloud57.de/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dirk Günther</title>
+      <link>http://www.cloud57.de/team/dirk/</link>
+      <pubDate>Wed, 01 Jun 2016 15:49:34 +0200</pubDate>
+      
+      <guid>http://www.cloud57.de/team/dirk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rest mit Apache Camel</title>
+      <link>http://www.cloud57.de/blog/rest-mit-camel/</link>
+      <pubDate>Wed, 01 Jun 2016 09:37:04 +0200</pubDate>
+      
+      <guid>http://www.cloud57.de/blog/rest-mit-camel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helge Schneider</title>
+      <link>http://www.cloud57.de/team/helge/</link>
+      <pubDate>Wed, 01 Jun 2016 09:36:28 +0200</pubDate>
+      
+      <guid>http://www.cloud57.de/team/helge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scanstation</title>
+      <link>http://www.cloud57.de/projekte/scanstation/</link>
+      <pubDate>Wed, 01 Jun 2016 09:35:37 +0200</pubDate>
+      
+      <guid>http://www.cloud57.de/projekte/scanstation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dr ToDo Little</title>
+      <link>http://www.cloud57.de/projekte/drtodolittle/</link>
+      <pubDate>Wed, 01 Jun 2016 09:35:23 +0200</pubDate>
+      
+      <guid>http://www.cloud57.de/projekte/drtodolittle/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
