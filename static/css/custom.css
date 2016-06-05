@@ -11,6 +11,16 @@ img.profile {
 	background: #f0f0f0 !important;
 }
 
+.header .navbar-toggle {
+	border-color: #f0f0f0;
+}
+
+.header .nav > li > .search:hover {
+	background: #f0f0f0;
+	color: #fff !important;
+}
+
+
 .promo {
 	padding-top: 51px;
 }
