@@ -2,10 +2,10 @@
 	<div class="bg-color-light">
 			<div class="container content-md">
 				<div class="row">
-				<div class="col-md-2 col-sm-6"></div>
+				<div class="col-md-2 col-sm-6 col-xs-1"></div>
 					<!-- Team v2 -->
 					{{ range .Data.Pages }}
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col-xs-10">
 						<div class="team-v2 no-margin-bottom">
 							<img class="img-responsive" src="/img/team/{{ with .Params.picture }}{{ . }}{{ end }}" alt="">
 							<div class="inner-team">
@@ -33,7 +33,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6"></div>
+					<div class="col-md-2 col-sm-6 col-xs-1"></div>
 					{{ end }}
 					<!-- End Team v2 -->
 				</div>
