@@ -4,5 +4,3 @@ title = "Helge Schneider"
 picture = "user.jpg"
 +++
 
-Helge Schneider
-===============
