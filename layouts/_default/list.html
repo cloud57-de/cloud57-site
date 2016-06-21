@@ -5,6 +5,7 @@
 		{{ range .Data.Pages }}
 			<div class="col-md-6 col-sm-6 g-mb-30" >
 				<h4 class="g-mb-15"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+				<p>{{ .Summary }}</p>
 			</div>
 		{{ end }}	
 		</div>

@@ -24,3 +24,7 @@ img.profile {
 .promo {
 	padding-top: 51px;
 }
+
+.breadcrumbs-v1 {
+	background: url(/img/banners/banner.png) center no-repeat;
+}

@@ -5,3 +5,15 @@ title = "Cloud57"
 SectionPagesMenu = "hauptmenue"
 pluralizeListTitles = false
 
+googleAnalytics = "UA-79745010-1"
+
+
+[params]
+
+    # Format dates with Go's time formating
+    date_format = "2006-01-02"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
