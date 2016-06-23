@@ -7,11 +7,17 @@
 					<div class="col-md-9">
 						<!-- News v3 -->
 						<div class="news-v3 bg-color-white margin-bottom-30">
-							<img class="img-responsive full-width" src="assets/img/main/img12.jpg" alt="">
+							{{ if isset .Params "picture" }}
+							<img class="img-responsive full-width" src="/img/{{ .Params.picture }}" alt="">
+							{{ end }}
 							<div class="news-v3-in">
 								<ul class="list-inline posted-info">
-									<li>By <a href="#">Alexander Jenni</a></li>
-									<li>In <a href="#">Design</a></li>
+									{{ $author := .Params.author }}
+									{{ range (where .Site.Pages "Type" "team") }}
+										{{ if and (eq .Params.id $author) ( $author ) }}
+											<li>By <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+										{{ end }}
+									{{ end }}
 									<li><time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time></li>
 								</ul>
 								<h2><a href="#">{{ .Title }}</a></h2>
@@ -39,23 +45,6 @@
 							</div>
 						</div>
 						<!-- End News v3 -->
-
-						<!-- Blog Post Author -->
-						<div class="blog-author margin-bottom-30">
-							<img src="assets/img/team/img1-md.jpg" alt="">
-							<div class="blog-author-desc">
-								<div class="overflow-h">
-									<h4>Alexander Jenni</h4>
-									<ul class="list-inline">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								</div>
-								<p>In auctor fringilla turpis eu rhoncus. Vivamus quis nisi vel dui ultrices lacinia ac eu massa. Quis que vitae consequat sapien. Vivamus sit amet tincidunt ipsum, nec blandit ipsum. Lorem ipsu m dolor sit amet, consectetur adipiscing elit...</p>
-							</div>
-						</div>
-						<!-- End Blog Post Author -->
 
 					</div>
 					<!-- End Blog All Posts -->

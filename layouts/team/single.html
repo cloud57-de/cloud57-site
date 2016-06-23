@@ -1,10 +1,12 @@
 {{ partial "header.html" . }}
+
+
 	<div class="bg-color-light">
 				<div class="container content-md">
 					<div class="row about-me">
 						<div class="col-sm-4 shadow-wrapper md-margin-bottom-40">
 							<div class="box-shadow shadow-effect-2">
-								<img class="img-responsive img-bordered full-width" src="/img/team/{{ with .Params.picture }}{{ . }}{{ end }}" alt="">
+								<img class="img-responsive img-bordered full-width" src="/img/team/{{ .Params.photo }}" alt="">
 							</div>
 						</div>
 
@@ -12,7 +14,8 @@
 							<div class="overflow-h">
 								<div class="pull-left">
 									<h2>{{ .Title }}</h2>
-									<span>{{ with .Params.job }}{{ . }}{{ end }}</span>
+
+									<span>{{ .Params.job }}</span>
 								</div>
 								<ul class="social-icons pull-right">
 									<li><a class="rounded-x social_facebook" data-original-title="Facebook" href="#"></a></li>

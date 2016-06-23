@@ -5,16 +5,22 @@
 		<div class="col-md-9">
 		{{ range .Data.Pages }}
 			<div class="news-v3 bg-color-white margin-bottom-30">
-							<img class="img-responsive full-width" src="assets/img/main/img12.jpg" alt="">
-							<div class="news-v3-in">
-								<ul class="list-inline posted-info">
-									<li>By <a href="#">Alexander Jenni</a></li>
-									<li>In <a href="#">Design</a></li>
-									<li><time datetime="2016-06-21 16:42:47 +0200 CEST" itemprop="datePublished">2016-06-21</time></li>
-								</ul>
-								<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-								{{ .Summary }}
-							</div>
+				{{ if isset .Params "picture" }}
+					<img class="img-responsive full-width" src="/img/{{ .Params.picture }}" alt="">
+				{{ end }}
+				<div class="news-v3-in">
+					<ul class="list-inline posted-info">
+						{{ $author := .Params.author }}
+						{{ range (where .Site.Pages "Type" "team") }}
+							{{ if and (eq .Params.id $author) ( $author ) }}
+								<li>By <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+							{{ end }}
+						{{ end }}
+						<li><time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time></li>
+					</ul>
+					<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+					{{ .Summary }}
+				</div>
 			</div>
 		{{ end }}	
 		
