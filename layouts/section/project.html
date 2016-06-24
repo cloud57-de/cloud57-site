@@ -2,16 +2,21 @@
 	<div class="bg-color-light">
 			<div class="container content-md">
 				<div class="row">
+				
 					<!-- Team v2 -->
 					{{ range .Data.Pages }}
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-1"></div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="team-v2 no-margin-bottom">
-							<img class="img-responsive" src="assets/img/team/img40-md.jpg" alt="">
+							{{ if and (isset .Params "icon") (.Params.icon) }}
+							<img class="img-responsive" src="/img/project/{{ with .Params.icon }}{{ . }}{{ end }}" alt="">
+							{{ end }}
 							<div class="inner-team">
 								<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-								<small class="color-green">CEO, Chief Officer</small>
-								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
 								<hr>
+								<p>{{ with .Params.shortdescription }}{{ . }}{{ end }}</p>
+								
+								<!--
 								<ul class="list-inline team-social">
 									<li>
 										<a data-placement="top" data-toggle="tooltip" class="fb tooltips" data-original-title="Facebook" href="#">
@@ -29,6 +34,7 @@
 										</a>
 									</li>
 								</ul>
+								-->
 							</div>
 						</div>
 					</div>

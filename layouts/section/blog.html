@@ -5,7 +5,7 @@
 		<div class="col-md-9">
 		{{ range .Data.Pages }}
 			<div class="news-v3 bg-color-white margin-bottom-30">
-				{{ if isset .Params "picture" }}
+				{{ if and (isset .Params "picture") (.Params.picture) }}
 					<img class="img-responsive full-width" src="/img/{{ .Params.picture }}" alt="">
 				{{ end }}
 				<div class="news-v3-in">

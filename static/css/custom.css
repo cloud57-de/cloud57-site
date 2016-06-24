@@ -7,9 +7,14 @@ img.profile {
 	font-size: 26px;
 }
 
-.header .navbar-toggle:hover {
+.header .navbar-toggle:hover, .navbar-toogle:focus {
 	background: #f0f0f0 !important;
 }
+
+.navbar-toggle {
+	background: #f0f0f0;
+}
+
 
 .header .navbar-toggle {
 	border-color: #f0f0f0;
@@ -28,3 +33,4 @@ img.profile {
 .breadcrumbs-v1 {
 	background: url(/img/banners/banner.png) center no-repeat;
 }
+

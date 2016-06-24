@@ -8,7 +8,9 @@
 					<div class="col-md-1"></div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="team-v2 no-margin-bottom">
+							{{ if and (isset .Params "photo") (.Params.photo) }}
 							<img class="img-responsive" src="/img/team/{{ with .Params.photo }}{{ . }}{{ end }}" alt="">
+							{{ end }}
 							<div class="inner-team">
 								<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 								<small class="color-green">{{ with .Params.job }}{{ . }}{{ end }}</small>
