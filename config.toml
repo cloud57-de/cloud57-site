@@ -1,19 +1,18 @@
-baseurl = "http://www.cloud57.de/"
+baseURL = "http://www.cloud57.de/"
 languageCode = "de-de"
-title = "Cloud57"
-
-SectionPagesMenu = "hauptmenue"
-pluralizeListTitles = false
-
-googleAnalytics = "UA-79745010-1"
-
+title = "Cloud57 - Agiles Business Prozess Management in the Cloud"
+theme = "hpstr"
+description = "Blog"
+background = "images/blue-2353048_1920.jpg"
+disqusShortname = "cloud57"
+googleAnalytics = "UA-102036854-1"
 
 [params]
-
-    # Format dates with Go's time formating
-    date_format = "2006-01-02"
-
-[taxonomies]
-tag = "tags"
-category = "categories"
-
+	subtitle = "Glücklicher und erfolgreicher durch New Work"
+	[params.author]
+		name = "Dirk Günther"
+		avatar = "/images/avatar.jpg"
+		bio = "An elegant, responsive theme for Hugo"
+		github = "dldx/hpstr-hugo-theme"
+	[params.image]
+	  feature = "/images/glaciar-2398827_1920.jpg"
