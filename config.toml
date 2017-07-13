@@ -1,11 +1,12 @@
 baseURL = "http://www.cloud57.de/"
 languageCode = "de-de"
-title = "Cloud57 - Agiles Business Prozess Management in the Cloud"
+title = "Cloud57 - Agiles Business Prozess Management in der Cloud"
 theme = "hpstr"
 description = "Blog"
-background = "images/blue-2353048_1920.jpg"
+background = "/images/blue-2353048_1920.jpg"
 disqusShortname = "cloud57"
 googleAnalytics = "UA-102036854-1"
+copyright = "(c) Cloud57"
 
 [params]
 	subtitle = "Glücklicher und erfolgreicher durch New Work"
@@ -13,6 +14,6 @@ googleAnalytics = "UA-102036854-1"
 		name = "Dirk Günther"
 		avatar = "/images/avatar.jpg"
 		bio = "An elegant, responsive theme for Hugo"
-		github = "dldx/hpstr-hugo-theme"
+		github = "CloudyDirk"
 	[params.image]
 	  feature = "/images/glaciar-2398827_1920.jpg"
