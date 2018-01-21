@@ -1,19 +1,57 @@
-baseURL = "http://www.cloud57.de/"
-languageCode = "de-de"
-title = "Cloud57 - Agiles Business Prozess Management in der Cloud"
-theme = "hpstr"
-description = "Blog"
-background = "/images/blue-2353048_1920.jpg"
-disqusShortname = "cloud57"
-googleAnalytics = "UA-102036854-1"
-copyright = "(c) Cloud57"
+baseurl             = "https://www.cloud57.de/"   # Your domain name. Must end with "/"
+languageCode        = "de-de"
+title               = "Cloud57"
+theme               = "introduction"
+enforce_ssl         = true
+builddrafts         = false                         # Include pages with draft status of true
+canonifyurls        = true                          # Turns relative urls into absolute urls
+# disqusshortname   = "xxx"                         # Enable Disqus for comments
+# googleAnalytics   = "xxx"
 
 [params]
-	subtitle = "Glücklicher und erfolgreicher durch New Work"
-	[params.author]
-		name = "Dirk Günther"
-		avatar = "/images/avatar.jpg"
-		bio = "An elegant, responsive theme for Hugo"
-		github = "CloudyDirk"
-	[params.image]
-	  feature = "/images/glaciar-2398827_1920.jpg"
+    bloghead        = "Cloud57 Blog"                        # Full name shows on blog post pages
+    firstname       = "Cloud57"                # First name shows in introduction on main page
+    tagline         = "Cloud Enterprise Apps"       # Appears after the introduction
+    introheight     = "medium"                       # Input either 'medium' or 'large' or 'fullheight'
+    theme           = "light"                        # Choose 'light' or 'dark'
+    avatar          = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
+    email           = "info@cloud57.de"         # Shows in contact section, or leave blank to omit
+    localtime       = true                          # Show your current local time in contact section
+    timezone        = "Europe/Berlin"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    dateform        = "Jan 2, 2006"
+    dateformfull    = "Mon Jan 2 2006 15:04:05 EST"
+    cachebuster     = false                         # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
+    description     = "Website Description"         # Max 160 characters show in search results
+    faviconfile     = "img/fav.ico"
+    highlightjs     = true                          # Syntax highlighting
+    footertext      = ""                            # Text to show in footer (overrides default text)
+    fadein          = true                          # Turn on/off the fade-in effect
+
+    showblog            = true                      # Show Blog section on home page
+    showprojects        = true                      # Show Projects section on home page
+    projectcolumns      = "3"                       # Choose "2" or "3" columns for projects section
+    placeholderimg      = "/img/workday.jpg"        # For Projects without image
+    showallposts        = false                     # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
+    showlatest          = true                      # Show latest blog post summary
+    sharebuttons        = true                      # On post pages, show share this social buttons
+
+    # Share buttons
+    sharetwitter        = true
+    sharefacebook       = true
+    sharepinterest      = false
+    sharegoogleplus     = true
+
+# Social icons appear in introduction and contact section. Add as many more as you like.
+# Find icon names here: http://fontawesome.io/cheatsheet/
+
+[[params.social]]
+    url = "https://twitter.com/"
+    icon = "twitter"
+
+[[params.social]]
+    url = "https://facebook.com/"
+    icon = "facebook"
+
+[[params.social]]
+    url = "https://linkedin.com/"
+    icon = "linkedin"
