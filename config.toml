@@ -1,4 +1,4 @@
-baseurl             = "https://www.cloud57.de/"   # Your domain name. Must end with "/"
+baseurl             = ""   # Your domain name. Must end with "/"
 languageCode        = "de-de"
 title               = "Cloud57"
 theme               = "introduction"
