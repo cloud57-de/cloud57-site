@@ -6,6 +6,6 @@ external_link: ""
 weight: 2
 draft: false
 ---
-Der [Google Drive Text Editor](https://drivetexteditor.cloud57.de) öffnet Textdateien, die in Google Drive gespeichert sind, in einem Text Editor direkt im Browser.
+The [Google Drive Text Editor] (https://drivetexteditor.cloud57.de) opens text files stored in Google Drive in a text editor directly in the browser.
 
-Die Textdatei muss nicht erst heruntergeladen werden, sondern kann direkt im Browser angezeigt und bearbeitet werden. Änderungen an dem Dokument können wieder direkt in Google Drive als neue Dokumentenversion gespeichert werden.
+The text file does not have to be downloaded first, but can be viewed and edited directly in the browser. Changes to the document can be saved directly back to Google Drive as a new document version.

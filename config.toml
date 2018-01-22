@@ -1,10 +1,10 @@
 baseurl             = "https://www.cloud57.de/"   # Your domain name. Must end with "/"
-languageCode        = "de-de"
+languageCode        = "en-us"
 title               = "Cloud57"
 theme               = "introduction"
 enforce_ssl         = true
 builddrafts         = false                         # Include pages with draft status of true
-canonifyurls        = true                          # Turns relative urls into absolute urls
+canonifyurls        = false                          # Turns relative urls into absolute urls
 # disqusshortname   = "xxx"                         # Enable Disqus for comments
 # googleAnalytics   = "xxx"
 

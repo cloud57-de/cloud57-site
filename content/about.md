@@ -3,4 +3,6 @@ title: "About"
 date: 2018-01-20T15:35:47+01:00
 draft: false
 ---
-Wir sind Entwickler, die sich zum Ziel gesetzt haben, das Thema Business Process Management mit Agilität zusammenzubringen. Im ersten Moment scheint dies ein Widerspruch zu sein. Wir sind jedoch davon überzeugt, das sich beide Themen wunderbar ergänzen und damit einen wirksamen Beitrag zur Leistungsfähigkeit von Unternehmen beitragen.
+We are developers who have set themselves the goal of bringing business process management together with agility. At first, this seems to be a contradiction. However, we are convinced that both topics complement each other wonderfully and thus contribute effectively to the performance of companies.
+
+Another goal of Cloud57 is to provide tools for Google GSuite.

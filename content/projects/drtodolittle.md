@@ -6,15 +6,15 @@ external_link: ""
 weight: 5
 draft: false
 ---
-[Dr ToDo Little](https://www.drtodolittle.de) ist eine einfache ToDo List implementiert mit AngularJS, Apache Camel, Apache Groovy und Camunda.
+[Dr ToDo Little](https://www.drtodolittle.de) is a simple ToDo-List-App implemented with AngularJS, Apache Camel, Apache Groovy and Camunda.
 
-Die Applikation besteht aus mehreren Teilen. Der Client ist
-eine Single Page Application (SPA) implementiert mit AngularJS. Die App ist responsive und passt sich somit dem entsprechenden Anzeigegerät an.
+The application consists of several parts. The client part is
+a Single Page Application (SPA) implemented with AngularJS. The app is responsive and thus adapts to the corresponding display device.
 
-Die Benutzung der Applikation ist extrem einfach gehalten. Ziel ist es keine überladene ToDo Liste mit möglichst vielen Funktionalitäten zu erstellen, sondern sie soll in aller erster Linie einfach zu bedienen sein.
+The use of the application is kept extremely simple. The goal is not to create an overloaded ToDo-List-App with as many functionalities as possible, but above all, it should be easy to use.
 
-Auf dem Server wird Spring Boot mit Apache Camel verwendet. Die REST Schnittstelle ist mit der CAMEL REST DSL erstellt. Die übergeben Daten werden mit Hilfe von Camel Prozessoren, die in Groovy implementiert sind, transfomiert und dann an eine Camunda BPM Engine weitergeleitet.
+The server uses Spring Boot with Apache Camel. The REST interface is created with the CAMEL REST DSL. The transferred data is transformed by means of Camel processors, which are implemented in Groovy, and then forwarded to a Camunda BPM engine.
 
-Die Persistierung und die Verwaltung der ToDo Liste erfolgt in Camunda.
+The persistence and administration of the ToDo list takes place in Camunda.
 
 [Dr ToDo Little Website](https://www.drtodolittle.de)

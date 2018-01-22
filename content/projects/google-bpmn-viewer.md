@@ -6,8 +6,8 @@ external_link: ""
 weight: 1
 draft: false
 ---
-Der [Google Drive BPMN Viewer](https://bpmnviewer.cloud57.de) zeigt BPMN Diagramm, die in Google Drive gespeichert sind, in einem Viewer an.
+The [Google Drive BPMN Viewer] (https://bpmnviewer.cloud57.de) displays BPMN diagrams stored in Google Drive in a viewer.
 
-Der Viewer verwendet den Camunda BPMN Viewer aus dem Projekt [bpmn.io](https://bpmn.io) und integriert ihn in eine Single Page Application (SPA).
+The viewer uses the Camunda BPMN Viewer from the project [bpmn.io] (https://bpmn.io) and integrates it into a single page application (SPA).
 
-Anwender können direkt aus der Google Drive Webapplikation BPMN Diragramme anzeigen, ohne das sie das Diagramm erst herunterladen müssen und dann in einer geeigneten Applikation anzeigen können.
+Users can view BPMN graphs directly from the Google Drive web application, without having to download the diagram first and then viewing it in a suitable application.
