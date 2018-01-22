@@ -6,7 +6,7 @@ enforce_ssl         = true
 builddrafts         = false                         # Include pages with draft status of true
 canonifyurls        = false                          # Turns relative urls into absolute urls
 # disqusshortname   = "xxx"                         # Enable Disqus for comments
-# googleAnalytics   = "xxx"
+googleAnalytics   = "UA-112909812-1"
 
 [params]
     bloghead        = "Cloud57 Blog"                        # Full name shows on blog post pages
@@ -16,7 +16,7 @@ canonifyurls        = false                          # Turns relative urls into 
     theme           = "light"                        # Choose 'light' or 'dark'
     avatar          = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
     email           = "info@cloud57.de"         # Shows in contact section, or leave blank to omit
-    localtime       = true                          # Show your current local time in contact section
+    localtime       = false                          # Show your current local time in contact section
     timezone        = "Europe/Berlin"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     dateform        = "Jan 2, 2006"
     dateformfull    = "Mon Jan 2 2006 15:04:05 EST"
