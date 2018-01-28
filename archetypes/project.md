@@ -1,8 +1,0 @@
-+++
-
-repository = ""
-url = ""
-icon = ""
-shortdescription = ""
-
-+++
