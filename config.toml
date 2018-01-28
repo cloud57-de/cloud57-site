@@ -5,7 +5,7 @@ theme               = "introduction"
 enforce_ssl         = true
 builddrafts         = false                         # Include pages with draft status of true
 canonifyurls        = false                          # Turns relative urls into absolute urls
-# disqusshortname   = "xxx"                         # Enable Disqus for comments
+disqusshortname   = "cloud57"                         # Enable Disqus for comments
 googleAnalytics   = "UA-112909812-1"
 
 [params]
