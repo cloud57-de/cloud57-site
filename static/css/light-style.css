@@ -1646,7 +1646,7 @@ table th {
     flex-grow: 1;
     -ms-flex-negative: 1;
     flex-shrink: 1;
-    padding: 0.75rem
+    padding: 1.75rem
 }
 
 .columns.is-mobile>.column.is-narrow {

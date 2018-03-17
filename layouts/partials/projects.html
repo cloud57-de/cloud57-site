@@ -12,21 +12,19 @@
                 <div class="card">
                         <div class="card-image">
                             <figure class="image is-3by2">
-                                <a {{ if .Params.external_link }}
-                                    href="{{ .Params.external_link }}"
-                                    {{ else }}
+                                <a 
+                                    href="{{ .RelPermalink }}"
                                     id="project{{.Title | urlize}}"
-                                    {{ end }}>
+                                    >
                                     <img src="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.placeholderimg }}{{ end }}">
                                 </a>
                             </figure>
                         </div>
                         <div class="card-content has-text-centered top-pad">
-                                <a {{ if .Params.external_link }}
-                                    href="{{ .Params.external_link }}"
-                                    {{ else }}
-                                    id="project{{.Title | urlize}}"
-                                    {{ end }}>
+                                <a href="{{ .RelPermalink }}"
+                                    
+                                    id="project{{.Title | urlize}}">
+                                    
                                     {{ .Title }}
                                 </a>
                         </div>
@@ -37,37 +35,6 @@
 </div>
 </div>
 <!-- End Projects container -->
-
-<!-- Projects modals -->
-{{ range sort .Pages }} {{ if eq .Section "projects" }}
-<div class="modal" id="modal{{.Title | urlize}}">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-        {{ with .Title }}
-        <header class="modal-card-header bottom-pad">
-            <p class="modal-card-title has-text-centered">{{ . }}</p>
-        </header>
-        {{ end }}
-        {{ if .Params.image }}
-            <img src="{{ .Params.image }}" class="img-responsive img-centered">
-        {{ end }}
-        {{ if .Content }}
-        <section class="modal-card-body markdown">
-            {{ .Content }}
-        </section>
-        {{ end }}
-    </div>
-    <button class="modal-close is-large" aria-label="close" id="close{{.Title | urlize}}"></button>
-</div>
-<script>
-    $('#project{{.Title | urlize}}').click(function() {
-        $('#modal{{.Title | urlize}}').addClass('is-active');
-    });
-    $('#close{{.Title | urlize}}').click(function() {
-        $('#modal{{.Title | urlize}}').removeClass('is-active');
-    });
-</script>
-{{ end }} {{ end }}
 
 
 <div class="container has-text-centered top-pad">
