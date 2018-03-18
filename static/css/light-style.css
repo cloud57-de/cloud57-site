@@ -1621,6 +1621,7 @@ table th {
 
 .section {
     background-color: #fff;
+    padding: 0.75rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1646,7 +1647,7 @@ table th {
     flex-grow: 1;
     -ms-flex-negative: 1;
     flex-shrink: 1;
-    padding: 1.75rem
+    padding: 0.75rem
 }
 
 .columns.is-mobile>.column.is-narrow {
@@ -6872,10 +6873,6 @@ body {
     animation-delay: 1.8s
 }
 
-.section {
-    background-color: #fff
-}
-
 .hero {
     background-color: #fff
 }
@@ -7209,3 +7206,4 @@ img {
 .hidden {
     display: none
 }
+
