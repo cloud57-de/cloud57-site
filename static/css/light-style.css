@@ -3931,7 +3931,6 @@ input[type="submit"].button {
 .input.is-inline,
 .textarea.is-inline {
     display: inline;
-    width: auto
 }
 
 .textarea {
@@ -4037,7 +4036,6 @@ input[type="submit"].button {
     padding-right: 0.625em;
     padding-top: 0.5em;
     position: relative;
-    vertical-align: top;
     background-color: #fff;
     border: 1px solid #dbdbdb;
     color: #363636;
@@ -6879,9 +6877,6 @@ body {
 
 a {
     color: #00b8d4;
-    hover-color: #000;
-    hover-font-style: none;
-    active-color: #00b8d4
 }
 
 .title {
@@ -7118,9 +7113,6 @@ img {
 
 .markdown a {
     color: #00b8d4;
-    hover-color: #dbdbdb;
-    hover-font-style: none;
-    active-color: #00b8d4
 }
 
 .markdown ul {
