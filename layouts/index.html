@@ -124,8 +124,15 @@
 </div><!-- End Contact section -->
 
 <div class="container"><hr></div>
-<div class="section no-padding has-text-centered" id="impressum">
-  {{ partial "impressum.html" . }}
+<div class="section no-padding" id="impressum">
+  
+  <div class="column markdown">
+    {{ range .Data.Pages }}
+        {{if eq .Title "Impressum" }}
+                {{.Content}}
+            {{end}}
+        {{ end }}
+</div>
   <div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
 </div><!-- End Blog section -->
 
