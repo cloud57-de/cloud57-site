@@ -118,23 +118,15 @@
         {{ end }}
 
         {{ partial "social.html" . }}
+
+        <div class="container has-text-centered top-pad">
+            <h3 class="title is-3" id="impressum"><a>Impressum</a></h3>
+        </div><!-- End Blog section -->
+        
     </div><!-- End Contact container -->
 
 	<div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
 </div><!-- End Contact section -->
-
-<div class="container"><hr></div>
-<div class="section no-padding" id="impressum">
-  
-  <div class="column markdown">
-    {{ range .Data.Pages }}
-        {{if eq .Title "Impressum" }}
-                {{.Content}}
-            {{end}}
-        {{ end }}
-</div>
-  <div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
-</div><!-- End Blog section -->
 
 <div class="container"><hr></div>
 
@@ -143,6 +135,8 @@
 <!-- Footer done! -->
 </div><!-- End of fade in three section -->
 <!-- Where all the awesome ends. Aww. -->
+
+{{ partial "impressum.html" . }}
 
 <!-- Bitty scrolling links script -->
 <script>
