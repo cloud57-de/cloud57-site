@@ -6203,6 +6203,9 @@ a.nav-item.is-tab.is-active {
     .nav-left {
         display: none
     }
+    .nav-center {
+        display: none
+    }
 }
 
 .nav {
