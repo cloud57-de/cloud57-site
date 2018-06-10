@@ -39,7 +39,7 @@
     <div class="container">
         {{ partial "nav-list.html" . }}
     </div><!-- Done with nav bar -->
-    
+
 <!-- Tell them all about it! -->
 <div class="section no-padding" id="about">
     <div class="container">
@@ -119,7 +119,7 @@
 
         {{ partial "social.html" . }}
 
-        
+
     </div><!-- End Contact container -->
 
 	<div class="container has-text-centered top-pad"><a href="#top"><i class="fa fa-arrow-up"></i></a></div>
@@ -143,6 +143,13 @@ $('a[href^="#"]').click(function(e) {
     }, 500);
     return false;
 })
+// Check for parameter showImp
+function getParam(name) {
+    return (new URL(window.location.href)).searchParams.get(name);
+}
+if(getParam("showImp")!=undefined){
+    $('#modalimpressum').addClass('is-active');
+}
 </script>
 
 </body>
